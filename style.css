@@ -332,9 +332,7 @@ h1 {
     .image-for-ad-2 {
         width: 0px;
         height: 78px;
-        border-radius: 15px;
-    }}
-
+    } 
     .top-links {
         flex-direction: row;
         flex-wrap: wrap;
@@ -402,6 +400,5 @@ h1 {
         width: 50px;
         margin: 0 auto;
     }
-
 
 }
