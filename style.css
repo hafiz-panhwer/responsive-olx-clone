@@ -5,6 +5,10 @@ body {
     background-color: #fff;
 }
 
+.image-for-ad img {
+    width: 100%;
+}
+
 .top-header {
     display: flex;
     align-items: center;
@@ -14,7 +18,11 @@ body {
 }
 
 .main-heading {
-    padding-left: 20px;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 40px;
+    line-height: 20px;
 }
 
 .logo {
@@ -99,9 +107,7 @@ span.para {
     padding: 13px 18px;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
-
 }
-
 
 .icons {
     display: flex;
@@ -152,20 +158,26 @@ span.para {
     line-height: 18px;
     display: inline;
     margin-right: 5px;
-}input.para:focus-visible {
-    outline: none;
 }
 
+input.para:focus-visible {
+    outline: none;
+}
 
 .location:focus-within {
     border: .1rem solid #23e5db !important;
 }
 
+.image-for-ad-2 {
+    display: flex;
+    justify-content: center;
+
+}
 
 .category-bar span {
     font-family: Roboto, Helvetica, sans-serif;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 18px;
     color: #002f34;
     padding: 0 20px;
@@ -229,7 +241,7 @@ span.para {
 .p-text {
     padding: 10px;
     font-size: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Roboto, Helvetica, sans-serif;
     color: #5e5e5e;
 }
 
@@ -243,10 +255,61 @@ span.para {
 }
 
 .hey p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Roboto, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 20px;
+}
+
+.categories-box {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.category-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.category-item img {
+    background-color: transparent;
+    border-radius: 100%;
+    height: 100px;
+    margin: 25px;
+    width: 100px;
+}
+
+.category-item a {
+    text-decoration: none;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #222;
+    text-align: center;
 }
 
 .hey h1 {
@@ -298,6 +361,7 @@ span.para {
 
     .main-heading {
         text-align: center;
+        line-height: 50px;
     }
 
     .category-bar {
@@ -316,6 +380,16 @@ span.para {
     .card-row2 {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .category-item img {
+        height: 80px;
+        width: 80px;
+        margin: 15px;
+    }
+
+    .category-row {
+        justify-content: center;
     }
 
     .logo {
