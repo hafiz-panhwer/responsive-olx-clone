@@ -329,6 +329,12 @@ h1 {
         align-items: flex-start;
     }
 
+    .image-for-ad-2 {
+        width: 0px;
+        height: 78px;
+        border-radius: 15px;
+    }}
+
     .top-links {
         flex-direction: row;
         flex-wrap: wrap;
@@ -342,7 +348,7 @@ h1 {
     }
 
     .location input {
-        width: 280px;
+        width: 200px;
     }
 
     .search-bar {
